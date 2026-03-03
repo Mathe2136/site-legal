@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Escola Tecnologia do Futuro</title>
+
+    <style>
+        :root {
+            --bg-body: white;
+            --text-body: black;
+            --card-bg: white;
+            --card-shadow: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-body: #121212;
+            --text-body: #e0e0e0;
+            --card-bg: #1e1e1e;
+            --card-shadow: rgba(0,0,0,0.5);
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-body);
+            transition: 0.3s;
+        }
+
+        header {
+            background-color: darkblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: blue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px var(--card-shadow);
+        }
+
+        footer {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+
+        .btn-tema {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+            font-size: 20px;
+            z-index: 1000;
+        }
+
+        button.action-btn {
+            background-color: darkblue;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="btn-tema" onclick="alternarTema()" title="Alternar Tema">🌓</button>
+
+    <header>
+        <h1>Escola Tecnologia do Futuro</h1>
+        <p>Educação, Inovação e Conhecimento</p>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Notícias</a>
+        <a href="#">Projetos</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <div class="container">
+        <div id="caixa-mensagem" style="text-align: center; margin-bottom: 20px; font-weight: bold;"></div>
+
+        <div class="card">
+            <h2>Últimas Notícias</h2>
+            <p>Os alunos do 3° Técnico iniciaram o projeto de criação de páginas em HTML.</p>
+            <button class="action-btn" onclick="mostrarAviso()">Clique para ver mensagem</button>
+        </div>
+
+        <div class="card">
+            <h2>Avisos importantes</h2>
+            <p>Reunião de pais será realizada na proxima semana.</p>
+            <button class="action-btn" onclick="mostrarAviso()">Clique para ver mensagem</button>
+        </div>
+        <div class="card">
+            <h2>Projetos Tecnológicos</h2>
+            <p>Os alunos mostram seus projetos</p>
+            <button class="action-btn" onclick="mostrarAviso()">Clique para ver mensagem</button>
+        </div>
+     </div>    
+
+    <footer>
+        <p>&copy; 2026 Escola Tecnologia do Futuro - Todos os direitos reservados </p>
+    </footer>
+
+    <script>
+        function mostrarAviso() {
+            const local = document.getElementById("caixa-mensagem");
+            local.innerText = "A educação transforma vidas! Continue estudando!";
+            local.style.color = "var(--text-body)";
+        }
+        function alternarTema() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
