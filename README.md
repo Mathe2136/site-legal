@@ -5,8 +5,11 @@ O objetivo é oferecer uma interface clara e moderna com as habilidades que tenh
 
 **O projeto inclui:**
 🌗 Modo claro e modo escuro
+
 🎛️ Interatividade por botões
+
 🔗 Links de redirecionamento interno e externo
+
 🏫 Design voltado para uso escolar
 
 
