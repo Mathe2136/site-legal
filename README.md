@@ -14,6 +14,7 @@ O objetivo é oferecer uma interface clara e moderna com as habilidades que tenh
 
 
 ✨**Funcionalidade**
+
 🌗 Modo Claro/Escuro
 
 Troca de tema com apenas um clique.
@@ -39,6 +40,7 @@ Estrutura organizada para facilitar acesso rápido às informações.
 
 
 🛠️ **Tecnologias Utilizadas**
+
 🔹 HTML
 °Estrutura do site
 
