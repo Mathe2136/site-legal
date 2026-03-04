@@ -17,15 +17,10 @@ O objetivo é oferecer uma interface clara e moderna com as habilidades que tenh
 
 🌗 Modo Claro/Escuro
 
-Troca de tema com apenas um clique.
-Preferência do usuário é salva no navegador.
-Estilo único para cada modo visual.
 
 🎛️ **Interatividade**
 
-Botões animados com efeitos visuais.
 Elementos dinâmicos que respondem a ações do usuário.
-Experiência mais fluida e envolvente.
 
 🔗 **Links de Redirecionamento**
 
